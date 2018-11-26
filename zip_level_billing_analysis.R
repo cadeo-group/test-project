@@ -3,7 +3,7 @@ require(lubridate)
 require(stringr)
 require(lme4)
 
-# pathname with all source data on Sharefile
+# pathname with all source data on Sharefile - change when we start moving files around.
 path = "S:/Shared Folders/CADEO/05_Data/CA PUC Energy Division/Billing" 
 
 # aggregated billing data by zip code - stack into single data frame
