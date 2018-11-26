@@ -26,6 +26,7 @@ cons$ncust <- as.numeric(gsub(",","",as.character(cons$ncust)))
 cons$kWh <- as.numeric(gsub(",","",as.character(cons$kWh)))
 cons$avgkwh <- as.numeric(gsub(",","",as.character(cons$avgkwh)))
 
+# clear out temporary data frames
 rm(y15q1,y15q2,y15q3,y15q4,y16q1,y16q2,y16q3,y16q4,y17q1,y17q2,y17q3,y17q4)
 
 
@@ -50,6 +51,8 @@ weather$datetime <- as.POSIXct(weather$DATE, format="%Y-%m-%d %H:%M" )
 weather$month <- month(weather$datetime)
 weather$day <- day(weather$datetime)
 weather$year <- year(weather$datetime)
+
+# clear out temporary data frames
 rm(w1,w2,w3)
 
 # subset to the daily weather rows, map each station to a climate zone
